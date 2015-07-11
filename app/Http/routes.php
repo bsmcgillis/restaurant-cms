@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('auth/csrf', function() {
+	return Response::json(['csrfToken' => csrf_token()]);
+});
+
+Route::controllers([
+	'auth' => 'Auth\AuthController'
+]);

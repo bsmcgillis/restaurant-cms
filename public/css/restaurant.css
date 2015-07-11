@@ -1,0 +1,9 @@
+[ng\:cloak], [ng-cloak],.ng-cloak 
+{
+	display:none !important;
+}
+
+.vert_spacer
+{
+	height: 50px;
+}

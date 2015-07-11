@@ -1,0 +1,58 @@
+<div data-ng-submit="submitLogin()">
+
+	<div class="row vert_spacer">
+	</div>
+
+	<div class="row">
+		<div class="col-lg-4">
+		</div>
+
+		<div data-ng-show="loginError" class="col-lg-4">
+			<div class="alert alert-danger" data-ng-cloak>
+				<p class="text-center">{{ loginError }}</p>
+			</div>
+		</div>
+
+		<div class="col-lg-4">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-3">
+		</div>
+
+		<div class="well well-lg col-lg-6">
+			<form novalidate name="login_form">
+				<div class="row">
+					<div class="form-group col-lg-8">
+						<label>Email</label>
+						<input type="text" class="form-control" name="email" data-ng-model="user.email" 
+							ng-keyup="submitted=false" required />
+					</div>
+					<div ng-messages="login_form.email.$error" class="text-danger" ng-if="submitted">
+						<div ng-message="required">*Email is required</div>
+						<div ng-message="email">*Email is invalid</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group col-lg-8">
+						<label>Password</label>
+						<input type="password" class="form-control" name="password" data-ng-model="user.password"
+							ng-keyup="submitted=false" required />
+					</div>
+					<div ng-messages="login_form.password.$error" class="text-danger" ng-if="submitted">
+						<div ng-message="required">*Password is required</div>
+					</div>
+	 			</div>
+				<div>
+					<button type="submit" id="submit" class="btn btn-primary" value="submit" ng-click="submitted=true">
+						Log In
+					</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="col-lg-3">
+		</div>
+	</div>
+</div>
