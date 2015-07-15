@@ -21,6 +21,7 @@
 		/* Logging Helper Functions */
 		factory.setupUser = function(user){
 			$cookies.user = {};
+			$cookies.loggedIn = true;
 			$cookies.user.name = user.name;
 			$cookies.user.email = user.email;
 			$cookies.user._token = $cookies.csrf;

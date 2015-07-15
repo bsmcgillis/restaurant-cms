@@ -10,7 +10,7 @@
 						adminRestaurantFactory.setupCSRF($scope.user._token);
 						adminRestaurantFactory.postLogin($scope.user)
 							.success(function(response){								
-								if(response.loggedIn){
+								if(response.loggedIn){	
 									adminRestaurantFactory.setupUser($scope.user);
 									$location.path('/admin/');
 								}

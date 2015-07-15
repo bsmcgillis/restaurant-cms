@@ -6,7 +6,7 @@
 		<title>Restaurant CMS</title>
 	</head>
 	<body>
-		<div ng-view class="container" />
+		<div ng-view />
 	</body>
 
 	<!-- Application Dependencies -->
