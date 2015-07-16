@@ -12,3 +12,20 @@
 {
 	margin-right:15px;
 }
+
+/**** Home Page Styles ****/
+#home2
+{
+	background: url(../images/home_image2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height:533px;
+}
+
+#home1
+{
+	background: url(../images/home_image1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height:534px;	
+}
